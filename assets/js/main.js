@@ -93,9 +93,10 @@ function refreshScrollSpy() {
 
 // open all links in new tab
 function openLinksNewTab() {
+  
   const { links } = document;
   for (let i = 0; i < links.length; i++) {
-    if (!links[i].href.includes('lioranboard.ca')) links[i].target = '_blank';
+    if (!links[i].href.includes('sammi.solutions')) links[i].target = '_blank';
   }
 }
 

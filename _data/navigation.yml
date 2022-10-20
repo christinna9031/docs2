@@ -34,6 +34,9 @@ main:
     - name: Objects
       link: commands/object
       collection: commands-object
+    - name: Date and Time
+      link: commands/date-time 
+      collection: commands-date-time
     - name: Statements & Loops
       link: commands/statements 
       collection: commands-statements
@@ -60,9 +63,6 @@ main:
           - name: Filters
             link: commands/obs-filters
             collection: commands-obs-filters
-          - name: Outputs
-            link: commands/obs-outputs
-            collection: commands-obs-outputs
           - name: Streaming
             link: commands/obs-streaming
             collection: commands-obs-streaming
@@ -75,15 +75,18 @@ main:
     - name: Twitch
       link: commands/twitch
       collection: commands-twitch
+    - name: YouTube
+      link: commands/youtube
+      collection: commands-youtube
     - name: Files
       subitems:
           - name: General
             link: commands/file-general
             collection: commands-file
-          - name: CSV
+          - name: CSV Files
             link: commands/file-csv
             collection: commands-file-csv
-          - name: INI
+          - name: INI Files
             link: commands/file-ini
             collection: commands-file-ini
     - name: Buffers
@@ -103,6 +106,17 @@ main:
       collection: commands-misc
 - name: Triggers
   collection: triggers
+- name: Local API
+  submenus: 
+    - name: Overview
+      link: api/overview
+      collection: api-overview
+    - name: API Reference
+      link: api/reference
+      collection: api-reference 
+    - name: Webhooks
+      link: api/webhooks
+      collection: api-webhooks       
 - name: FAQ 
   submenus: 
     - name: General
@@ -113,15 +127,20 @@ main:
       collection: faq-commands
 - name: Troubleshooting
   submenus: 
+    - name: Buttons & Commands
+      link: troubleshooting/buttons
+      collection: troubleshooting-buttons
     - name: Common Issues
       link: troubleshooting/common
       collection: troubleshooting-common
     - name: Error Messages
       link: troubleshooting/errors
       collection: troubleshooting-errors
+    - name: Recording Outputs
+      link: troubleshooting/outputs
+      collection: troubleshooting-outputs
     - name: Known Bugs
       link: troubleshooting/bugs
       collection: troubleshooting-bugs
 - name: About
   collection: about
-

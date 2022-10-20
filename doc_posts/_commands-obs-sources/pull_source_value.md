@@ -4,7 +4,7 @@ num: 0
 ---
 
 Pulls the last known value of a source. Will return 0 if the source doesn't exist.\
-Very useful command to use together with Motion commands. For example, you can pull the current X and Y position of a source and then use [Motion: Source Position]({{ "commands/obs-properties#motionsourceposition" | relative_url }}) to smoothly move it across the screen.
+Very useful command to use together with Motion commands. For example, you can pull the current X and Y position of a source and then use [Motion: Source Position]({{ "commands/obs-motion#motionsourceposition" | relative_url }}) to smoothly move it across the screen.
 
 {% include alert.html text="This command might not work correctly if the source is inside a group. It's recommended to use nested scenes instead." type="danger" %} 
 
@@ -25,7 +25,7 @@ Very useful command to use together with Motion commands. For example, you can p
 |Current X/Y Size | Returns current size of the source (applies scaling, crop etc.)) | For example 600
 |Crop Left/Top/Right/Bottom | Returns current crop values of the source | For example 50
 |Rotation | Returns the degree of rotation of the source | 0-360
-|Volume | Returns the volume percentage of the source | 0-100
+|Volume | Returns the volume percentage of the source | 0-1
 |Muted | Returns boolean value whether the source is muted or not | 0 for unmuted and 1 for muted
 |Visible | Returns boolean value whether the source is visible or not | 0 for not visible and 1 for visible
 {:class='table table-secondary w-auto table-hover data-toggle='table' text-break }

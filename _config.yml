@@ -1,22 +1,23 @@
-title: LioranBoard 2 Stream Deck
-tagline: LioranBoard 2 | Free and powerful Stream Deck for your Twitch and YouTube | Works with OBS
-description: Transform your ordinary stream into interactive experience for your viewers with LioranBoard Stream Deck
-name: LioranBoard 2 • Free Stream Deck 
-url: "https://lioranboard.ca"
+title: SAMMI
+tagline: SAMMI | Stream Automation, Management, Monitoring and Innovation | Works with Twitch, YouTube, OBS
+description: Transform your ordinary stream into interactive experience for your viewers with SAMMI
+name: SAMMI • Free Streamer Tool
+stableVersion: 202244
+url: "https://sammi.solutions"
 author:
-  twitter: christina_kral
-repository: https://github.com/LioranBoard/docs2
+  twitter: SAMMISolutions
+repository: https://github.com/SAMMISolutions/docs
 logo: /assets/favicon/favicon-32x32.png
 social:
-  name: LioranBoard
+  name: SAMMI
   links:
-    - https://twitter.com/lioranboard
-    - https://github.com/LioranBoard
+    - https://twitter.com/SAMMISolutions
+    - https://github.com/SAMMISolutions
 timezone: US/Pacific
-google_analytics_id: G-BW26WQFHV8
+google_analytics_id: G-Q3ZGBDKL0V
 google_site_verification: XXX
 twitter:
-    username: lioranboard
+    username: SAMMISolutions
     card: summary
 plugins:
   - jekyll-feed
@@ -57,6 +58,10 @@ defaults:
   values:
     menu: Integrations
 - scope: 
+    path: docs/local api
+  values:
+    menu: Local API      
+- scope: 
     path: docs/faq
   values:
     menu: FAQ    
@@ -67,8 +72,8 @@ defaults:
 sass:
     sass_dir: _sass
 algolia:
-    application_id: T1W4YLUXZS
-    index_name:  docs # You can replace that with whatever name you want
+  application_id: 'I48YE43FLX'
+  index_name: 'lioranboard'
 collections_dir: doc_posts
 collections:
   getting-started:
@@ -87,6 +92,12 @@ collections:
       output: true
   triggers:
       output: true
+  api-overview:
+      output: true
+  api-reference:
+      output: true
+  api-webhooks:
+      output: true            
   faq-general: 
       output: true
   faq-receiver: 
@@ -99,6 +110,10 @@ collections:
       output: true  
   troubleshooting-bugs:
       output: true 
+  troubleshooting-buttons:
+      output: true 
+  troubleshooting-outputs:
+      output: true 
   commands-introduction: 
       output: true  
   commands-variable: 
@@ -110,6 +125,8 @@ collections:
   commands-array: 
       output: true 
   commands-object: 
+      output: true 
+  commands-date-time: 
       output: true 
   commands-mouse-kb:
       output: true
@@ -127,6 +144,8 @@ collections:
       output: true
   commands-twitch: 
       output: true
+  commands-youtube: 
+      output: true
   commands-buffer: 
       output: true
   commands-sounds: 
@@ -140,8 +159,6 @@ collections:
   commands-obs-filters: 
       output: true 
   commands-obs-media: 
-      output: true 
-  commands-obs-outputs: 
       output: true 
   commands-obs-motion: 
       output: true 

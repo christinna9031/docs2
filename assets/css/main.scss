@@ -34,6 +34,12 @@ a:hover {
 	text-decoration: underline
 }
 
+div.highlight {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f2f6f9;
+}
+
 
 /*disabled links*/
 
@@ -409,6 +415,11 @@ a.tooltip {
 	code {
 		color: #88b8ff;
 	}
+	div.highlight {
+		padding: 1rem;
+		margin-bottom: 1rem;
+		background-color: #f8f9fa17;
+	}
 	.container-xxl.lb-layout {
 		background-color: #1b1b1b;
 	}
@@ -448,6 +459,11 @@ a.tooltip {
 	.lb-layout .lb-content .alert a:visited {
 		color: #e4eaf1db;
 	}
+
+	#dlAlert a {
+		color: #e4eaf1db;
+		}
+		
 	.lb-content,
 	.footer-basic a,
 	.feature-icon a,

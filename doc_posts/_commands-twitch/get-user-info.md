@@ -5,13 +5,15 @@ num: 6
 
 Retrieves information about a Twitch user. Provide either their username or user ID (leave the other one empty).
 
-{% include alert.html text="This command needs some time to execute, either delay your next commands by 1-2 seconds or use <a href='/commands/statements#waituntilvariableexists'>Wait Until Variable Exists</a> command." type="warning" %} 
+If your receiver crashes with an error log relating to this command, make sure you have enabled the `View email address` scope in your Twitch connection settings. The command will not work without this scope enabled.
 
-| Box Name | Type | Description | 
+{% include alert.html text="This command needs some time to execute, either delay your next commands by 1-2 seconds or use <a href='/docs/commands/wait#waituntilvariableexists'>Wait Until Variable Exists</a> command." type="warning" %}
+
+| Box Name | Type | Description |
 |-------|--------|--------
 |User Name|String|Username to get the information for
 |User ID|Number|User ID to get the information for
-|Save Variable|String|Variable to save the whole object 
+|Save Variable|String|Variable to save the whole object
 {:class='table table-primary'}
 
 You can access the response object fields by using [Get Object Variable]({{ "commands/object#getobjectvariable" | relative_url }}) command. The object is the Save Variable and key is one of the response fields.
@@ -19,7 +21,7 @@ You can access the response object fields by using [Get Object Variable]({{ "com
 
 **Response fields:**
 
-| Field | Type| Description| 
+| Field | Type| Description|
 |-------|--------|--------
 |broadcaster_type|	string|	User’s broadcaster type: "partner", "affiliate", or "".
 |description|	string|	User’s channel description.
@@ -34,7 +36,7 @@ You can access the response object fields by using [Get Object Variable]({{ "com
 |created_at|	string|	Date when the user was created.
 {:class='table table-secondary w-auto table-hover' }
 
-
+{% include example_public.html src="https://i.imgur.com/1wykfcB.png" size="100" title="Get a follower's profile picture" pastebin="FcaArEdc" %}
 
 
 
